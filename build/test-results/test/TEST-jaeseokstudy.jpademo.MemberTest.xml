@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="jaeseokstudy.jpademo.MemberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-18T13:25:00" hostname="gojaeseog-ui-MacBookAir.local" time="0.684">
+<testsuite name="jaeseokstudy.jpademo.MemberTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-04-19T14:18:13" hostname="gojaeseog-ui-MacBookAir.local" time="0.66">
   <properties/>
-  <testcase name="example()" classname="jaeseokstudy.jpademo.MemberTest" time="0.647"/>
-  <testcase name="영속성 컨텍스트에서 같은 id로 엔티티를 조회했을 때, 항상 같은 인스턴스를 반환한다." classname="jaeseokstudy.jpademo.MemberTest" time="0.015"/>
-  <testcase name="lazyWriteTest()" classname="jaeseokstudy.jpademo.MemberTest" time="0.009"/>
-  <system-out><![CDATA[22:24:55.880 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [MemberTest]: using SpringBootContextLoader
-22:24:55.889 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [jaeseokstudy.jpademo.MemberTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-22:24:55.890 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jaeseokstudy.jpademo.MemberTest]: MemberTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-22:24:55.918 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [MemberTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-22:24:56.040 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/gojaeseok/Desktop/jpa-study-demo/build/classes/java/main/jaeseokstudy/jpademo/JpademoApplication.class]
-22:24:56.051 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jaeseokstudy.jpademo.JpademoApplication for test class jaeseokstudy.jpademo.MemberTest
-22:24:56.147 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [MemberTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-22:24:56.148 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [MemberTest], class annotated with @DirtiesContext [false] with mode [null]
+  <testcase name="example()" classname="jaeseokstudy.jpademo.MemberTest" time="0.624"/>
+  <testcase name="영속성 컨텍스트에서 같은 id로 엔티티를 조회했을 때, 항상 같은 인스턴스를 반환한다." classname="jaeseokstudy.jpademo.MemberTest" time="0.013"/>
+  <testcase name="lazyWriteTest()" classname="jaeseokstudy.jpademo.MemberTest" time="0.01"/>
+  <system-out><![CDATA[23:18:08.809 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [MemberTest]: using SpringBootContextLoader
+23:18:08.817 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [jaeseokstudy.jpademo.MemberTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:18:08.818 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jaeseokstudy.jpademo.MemberTest]: MemberTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:18:08.849 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [MemberTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+23:18:08.967 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/Users/gojaeseok/Desktop/jpa-study-demo/build/classes/java/main/jaeseokstudy/jpademo/JpademoApplication.class]
+23:18:08.976 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jaeseokstudy.jpademo.JpademoApplication for test class jaeseokstudy.jpademo.MemberTest
+23:18:09.063 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [MemberTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+23:18:09.065 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [MemberTest], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -21,34 +21,57 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.5)
 
-2023-04-18T22:24:56.682+09:00  INFO 22287 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : Starting MemberTest using Java 17.0.6 with PID 22287 (started by gojaeseok in /Users/gojaeseok/Desktop/jpa-study-demo)
-2023-04-18T22:24:56.684+09:00  INFO 22287 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : No active profile set, falling back to 1 default profile: "default"
-2023-04-18T22:24:57.732+09:00  INFO 22287 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-18T22:24:57.760+09:00  INFO 22287 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
-2023-04-18T22:24:58.512+09:00  INFO 22287 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-04-18T22:24:58.709+09:00  INFO 22287 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
-2023-04-18T22:24:58.711+09:00  INFO 22287 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-04-18T22:24:58.788+09:00  INFO 22287 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-18T22:24:58.841+09:00  INFO 22287 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-18T22:24:59.160+09:00  INFO 22287 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-04-18T22:24:59.744+09:00  INFO 22287 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-18T22:24:59.751+09:00  INFO 22287 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-18T22:24:59.989+09:00  WARN 22287 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-18T22:25:00.432+09:00  INFO 22287 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
-2023-04-18T22:25:00.502+09:00  INFO 22287 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : Started MemberTest in 4.305 seconds (process running for 5.787)
+2023-04-19T23:18:09.542+09:00  INFO 24352 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : Starting MemberTest using Java 17.0.6 with PID 24352 (started by gojaeseok in /Users/gojaeseok/Desktop/jpa-study-demo)
+2023-04-19T23:18:09.544+09:00  INFO 24352 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : No active profile set, falling back to 1 default profile: "default"
+2023-04-19T23:18:10.517+09:00  INFO 24352 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-19T23:18:10.541+09:00  INFO 24352 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2023-04-19T23:18:11.342+09:00  INFO 24352 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-19T23:18:11.380+09:00  INFO 24352 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-19T23:18:11.638+09:00  INFO 24352 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-19T23:18:11.864+09:00  INFO 24352 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/test user=SA
+2023-04-19T23:18:11.869+09:00  INFO 24352 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-19T23:18:11.892+09:00  INFO 24352 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: 
+    
+    drop table if exists member cascade 
+Hibernate: 
+    
+    create table member (
+       id varchar(255) not null,
+        age integer,
+        create_date timestamp(6),
+        description clob,
+        last_modified_date timestamp(6),
+        role_type varchar(255),
+        name varchar(10) not null,
+        primary key (id)
+    )
+Hibernate: 
+    
+    alter table if exists member 
+       add constraint NAME_AGE_UNIQUE unique (name, age)
+2023-04-19T23:18:12.571+09:00  INFO 24352 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-19T23:18:12.580+09:00  INFO 24352 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-19T23:18:12.814+09:00  WARN 24352 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-19T23:18:13.240+09:00  INFO 24352 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2023-04-19T23:18:13.301+09:00  INFO 24352 --- [    Test worker] jaeseokstudy.jpademo.MemberTest          : Started MemberTest in 4.184 seconds (process running for 5.615)
 findMember=재석, age=20
 Hibernate: 
     /* insert jaeseokstudy.jpademo.Member
         */ insert 
     into
-        member (age, name, id) 
+        member (age, create_date, description, last_modified_date, role_type, name, id) 
     values
-        (?, ?, ?)
+        (?, ?, ?, ?, ?, ?, ?)
 Hibernate: 
     /* update
         jaeseokstudy.jpademo.Member */ update member 
     set
         age=?,
+        create_date=?,
+        description=?,
+        last_modified_date=?,
+        role_type=?,
         name=? 
     where
         id=?
@@ -59,6 +82,10 @@ Hibernate:
         Member m */ select
             m1_0.id,
             m1_0.age,
+            m1_0.create_date,
+            m1_0.description,
+            m1_0.last_modified_date,
+            m1_0.role_type,
             m1_0.name 
         from
             member m1_0
@@ -78,16 +105,16 @@ Hibernate:
     /* insert jaeseokstudy.jpademo.Member
         */ insert 
     into
-        member (age, name, id) 
+        member (age, create_date, description, last_modified_date, role_type, name, id) 
     values
-        (?, ?, ?)
+        (?, ?, ?, ?, ?, ?, ?)
 Hibernate: 
     /* insert jaeseokstudy.jpademo.Member
         */ insert 
     into
-        member (age, name, id) 
+        member (age, create_date, description, last_modified_date, role_type, name, id) 
     values
-        (?, ?, ?)
+        (?, ?, ?, ?, ?, ?, ?)
 === commit end ===
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
