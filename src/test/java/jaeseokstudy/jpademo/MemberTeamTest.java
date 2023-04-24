@@ -6,6 +6,8 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 @SpringBootTest
 public class MemberTeamTest {
 
@@ -44,5 +46,30 @@ public class MemberTeamTest {
         // then
         Assertions.assertEquals("member1", findMember.getId());
         Assertions.assertEquals("team1", findMember.getTeam().getId());
+    }
+
+    @Test
+    @DisplayName("양방향 연관관계를 이용해서 정상적으로 데이터를 저장하고 조회한다.")
+    void retrieveBiDirectionTest() {
+        // given
+        Team team1 = new Team("team1", "팀1");
+        em.persist(team1);
+
+        Member member1 = new Member("member1", "회원1");
+        member1.setTeam(team1);
+        em.persist(member1);
+
+        Member member2 = new Member("member2", "회원2");
+        member2.setTeam(team1);
+        em.persist(member2);
+
+        // when
+        Team team = em.find(Team.class, "team1");
+        List<Member> members = team.getMembers();
+
+        // then
+        Assertions.assertInstanceOf(List.class, members);
+        Assertions.assertEquals(2, members.size());
+        Assertions.assertEquals(member1, members.get(0));
     }
 }
